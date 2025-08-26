@@ -1,0 +1,16 @@
+EXERCICIOS.md
+Makefile
+README.md
+RELATORIO_TEMPLATE.md
+arquivos.txt
+dados
+docs
+ex1a_printf
+ex1b_write
+ex2_leitura
+ex3_contador
+ex4_copia
+lab2-chamadas-de-sistema-biadipalma
+setup_github_token.sh
+src
+traces
