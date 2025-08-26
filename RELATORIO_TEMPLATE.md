@@ -19,13 +19,14 @@ strace -e write ./ex1b_write
 **2. Por que há diferença entre os dois métodos? Consulte o docs/printf_vs_write.md**
 
 ```
-[Sua análise aqui]
+Porque o printf() não chama chama a syscall direto, já o write() escreve direto no terminal então vai para o syscall direto.
+
 ```
 
 **3. Qual método é mais previsível? Por quê você acha isso?**
 
 ```
-[Sua análise aqui]
+O write() é mais previsível porque sempre terá um syscall por chamada, já o printf() vai depender de um buffer antes do syscall  
 ```
 
 ---
@@ -46,7 +47,7 @@ strace -e openat,read,close ./ex2_leitura
 **1. Qual file descriptor foi usado? Por que não começou em 0, 1 ou 2?**
 
 ```
-oi usado o file 3, não começou com o 0, porque ele é usado para entrada, o 1 é usado para a saída e o 2 é usado para a saída com erro.
+O usado o file 3, não começou com o 0, porque ele é usado para entrada, o 1 é usado para a saída e o 2 é usado para a saída com erro.
 ```
 
 **2. Como você sabe que o arquivo foi lido completamente?**
